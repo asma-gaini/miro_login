@@ -1,0 +1,26 @@
+@mixin box-style-primary{
+    background-color: $white;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    padding: 4px 12px;
+    height: 40px;
+}
+
+@mixin heading1{
+    font-size: 3.052rem;
+}
+@mixin heading2{
+    font-size: 2.441rem;
+}
+@mixin heading3{
+    font-size: 1.953rem;
+}
+@mixin heading4{
+    font-size: 1.563rem;
+}
+@mixin heading5{
+    font-size: 1.25rem;
+}
+@mixin small{
+    font-size: 0.8rem;
+}

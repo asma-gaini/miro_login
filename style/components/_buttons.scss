@@ -1,0 +1,48 @@
+@import'../sass-utils/variables';
+@import'../sass-utils/mixins';
+
+.app{
+    width: 450px;
+    h2{
+        margin-bottom: 2vw;
+        font-size: 2.66666667vw;
+        line-height: 3.16666667vw;
+        font-weight: 700;
+    }
+}
+
+.button-social{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    padding-bottom: 20px;
+    .button-social--google{
+        svg{
+            width: 25px;
+        }
+        width: 180px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 20px 1fr;
+        align-items: center;
+        @include box-style-primary;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        &:hover{
+            border-color: $border-color;
+            background-color: $hover-color;
+        }
+    }
+    .button-social--other{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: flex-end;
+        .btn-other{
+            .logo{
+                width: 30px;
+            }
+            background-color: $white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
